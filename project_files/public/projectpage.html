@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>The Project Mail Service | make::learn</title>
+
+	<link rel="stylesheet" href="https://pagecdn.io/lib/normalize/8.0.1/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../style_projpage.css">
+</head>
+<body>
+	<div id = "BackButton" data-location="/">
+		<span class="material-icons">arrow_back_ios</span>
+		<span id = "BackLabel">Back</span>	
+	</div>
+	<div class = "row">
+		<div class = "col-1">
+			<div id = "Heading"> 
+				<h1 id = "Header">{{.Name}}</h1>
+				<div id = "SkillsObtainable">
+					<h4>Skills Obtainable</h4>
+					<div id = "Skills">
+						{{if not .Skills}} 
+							<p style='color:grey'>None</p>
+						{{else}}
+							{{range .Skills}}
+								<div class = "tabs">{{.}}</div>
+							{{end}}
+						{{end}}
+					</div>
+				</div>
+				<div id = "PrecursorsContainer">
+					<h4>Precursors</h4>
+					<div id = "Precursors">
+						{{if not .Precursors}} 
+							<p style='color:grey'>None</p>
+						{{else}}
+							{{range .Precursors}}
+								<div class = "tabs">{{.}}</div>
+							{{end}}
+						{{end}}
+					</div>
+				</div>
+			</div>
+			<div id = "Description">
+				<p>{{.Description}}</p>
+			</div>
+		</div>
+		<div class = "col-2">
+			<img src="{{.Logo}}" id="Image"/>
+			<h3 class = "col2Titles">Download Sample Course Contents</h3>
+			{{if not .Downloads}}
+				<p style="color: grey;">No Downloads Available</p>
+			{{else}}
+				{{range .Downloads}}
+					<div class = "downloadable-content" data-location="{{.Link}}">
+						{{if eq .Type "document"}}
+							<span class="material-icons md-24">picture_as_pdf</span>
+						{{else if eq .Type "image"}}
+							<span class="material-icons md-24">image</span>
+						{{else}}
+							<span class="material-icons md-24">description</span>
+						{{end}}
+						<span>{{.Name}}</span>
+					</div>
+				{{end}}
+			{{end}}
+			<h3 class = "col2Titles">Parts List</h3>
+			{{if not .Parts}}
+				<p style="color:grey">No Parts to Show</p>
+			{{else}}
+				<table id = "partstable">
+					<tr>
+						<th>PART</th>
+						<th>QTY</th>
+					</tr>
+					{{range .Parts}}
+						<tr>
+							<td>{{.PartName}}</td>
+							<td>{{.Quantity}}</td>
+						</tr>
+					{{end}}
+				</table>
+			{{end}}
+		</div>
+	</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+    $('.tabs').each(function () {
+        var color = 'rgba(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ', 0.5)';
+        $(this).css("background-color", color);
+    });
+	});
+	$("#BackButton").click(function(){
+		window.location = $("#BackButton").data("location");
+	})
+	$(".downloadable-content").click(function(){
+		window.location = $(".downloadable-content").data("location");
+	})
+</script>
+</html>

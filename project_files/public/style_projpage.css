@@ -1,0 +1,113 @@
+:root {
+	--primary: #5C6F6B; /* Feld grau */
+	--secondary: #91A3B0; /* Hechtgrau */
+
+	--primary-text: rgba(0, 0, 0, 0.87);
+
+	--header-text: #1E2749;
+	--brand-text: #CFE0C3;
+
+	--secondary-brand: #EFB7CA;
+	--secondary-brand-dark: #EDABC1;
+	--secondary-brand-text: rgba(30, 39, 73, 0.87);
+
+	--border-radius: 3px;
+}
+html, body {
+	height: 100%;
+}
+
+body {
+	color: var(--primary-text);
+	background-color: #f9fffc;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 3% 2%;
+}
+.col-1 {
+	width: 63%; 
+	float: left;
+	/*background-color: red;*/
+}
+.col-2 {
+	width: 32%;
+	float: right;
+	/*background-color: blueviolet;*/
+}
+.row:after {
+	content: "";
+  display: table;
+  clear: both;
+}
+.row{
+	padding: 0% 5%;
+}
+#Image{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.tabs{
+	display: table;
+	float: left;
+	margin-right: 10px;
+	padding: 1px 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+#Heading:after { 
+	content: " "; 
+	display: block;
+	clear: both;
+}
+#SkillsObtainable{
+	width:50%;
+	float: left;
+}
+#PrecursorsContainer{
+	width:50%;
+	float: right;
+}
+#Description{
+	margin-top: 1rem;
+}
+.col2Titles{
+	margin-top: 2.5rem;
+}
+.downloadable-content {
+	cursor: pointer;
+	padding: 5px 0px;
+}
+.downloadable-content > *{
+	vertical-align: middle;
+}
+#BackButton{
+	cursor:pointer;
+}
+#BackLabel{
+	font-size: 1.2em;
+}
+#BackButton > *{
+	vertical-align: middle;
+}
+#partstable{
+	width:70%;
+	border-collapse: collapse;
+	text-align: left;
+}
+#partstable th{
+	font-size: 0.8rem;
+}
+#partstable td:nth-child(1) {
+  width: 70%;
+}
+#partstable td:nth-child(2) {
+  width: 30%;
+}
+#partstable tr{
+	border-bottom: 1px solid rgba(0,0,0,0.2); 
+	line-height: 3rem;
+}
+#partstable tr:first-child{
+	line-height: 1.5rem;
+}

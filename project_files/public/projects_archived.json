@@ -1,0 +1,72 @@
+{
+	"projects" : [
+		{
+			"id": "00-intro-to-arduino",
+			"name": "Introduction to Arduino",
+			"logo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg",
+			"skills": [ "arduino" ],
+			"precursors": [],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nulla sem, eu porta massa viverra nec. Ut non dolor dignissim, lacinia justo ut, iaculis augue. Vestibulum bibendum non purus vitae pretium. Nam elit ex, luctus mattis congue sed, pellentesque sit amet velit. Maecenas nec quam a leo venenatis vehicula vel quis augue. Aenean tempor rutrum pharetra. Vivamus rhoncus volutpat mi ac sagittis. Fusce tristique eros quam, in rutrum magna sollicitudin at. Praesent lobortis sed neque ut bibendum. Nunc consectetur ligula enim, non condimentum risus consectetur eu. Cras pretium neque neque, et sodales erat pretium ac. Phasellus quam erat, venenatis in diam et, mattis aliquam sapien. Praesent dignissim non nunc ut sodales. Ut aliquam orci vitae sapien fermentum, sit amet tempus sapien elementum. Nulla volutpat arcu nec erat semper, ut commodo nibh fermentum. Curabitur condimentum sagittis lorem, in elementum magna viverra sit amet. In vehicula lobortis pretium. Nulla eu vehicula justo. In gravida nisl augue. Etiam cursus neque sit amet blandit consectetur. In rutrum dolor finibus, cursus eros sit amet, vulputate turpis. Sed pulvinar mauris quam, sed sollicitudin justo suscipit non. Vestibulum molestie non nisi non fermentum. Sed hendrerit porta odio, finibus dictum elit. Quisque posuere enim sed tempus vulputate. Curabitur pulvinar risus lacus, ac pharetra est blandit ultrices. Phasellus pretium dapibus arcu, id elementum diam. Donec euismod elit a orci iaculis laoreet. Quisque accumsan, justo ac maximus faucibus, mauris mauris condimentum nisl, in ornare tellus dolor ut felis. Curabitur placerat orci malesuada tellus vehicula mollis. Cras vel efficitur diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin efficitur, mi sed pharetra venenatis, nisl est hendrerit quam, in consequat tortor lacus ut risus. Cras diam ligula, posuere ac nisl maximus, tempus mollis nulla.",
+			"parts": [
+				{
+					"part_name": "Arduino",
+					"quantity": 1
+				},
+				{
+					"part_name": "LCD Display",
+					"quantity": 1
+				},
+				{
+					"part_name": "Wires",
+					"quantity": 20
+				}
+			],
+			"downloads": [
+				{
+					"type": "document",
+					"name": "00-intro-to-arduino.pdf",
+					"link": "/"
+				},
+				{
+					"type": "image",
+					"name": "00-intro-to-arduino.png",
+					"link": "/"
+				}
+			]
+		},
+		{
+			"id": "01-sunflower",
+			"name": "Sun Follower",
+			"logo": "https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/svgs/solid/sun.svg",
+			"skills": [ "servos", "light", "differential inputs" ],
+			"precursors": ["00-intro-to-arduino"],
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nulla sem, eu porta massa viverra nec. Ut non dolor dignissim, lacinia justo ut, iaculis augue. Vestibulum bibendum non purus vitae pretium. Nam elit ex, luctus mattis congue sed, pellentesque sit amet velit. Maecenas nec quam a leo venenatis vehicula vel quis augue. Aenean tempor rutrum pharetra. Vivamus rhoncus volutpat mi ac sagittis. Fusce tristique eros quam, in rutrum magna sollicitudin at. Praesent lobortis sed neque ut bibendum. Nunc consectetur ligula enim, non condimentum risus consectetur eu. Cras pretium neque neque, et sodales erat pretium ac. Phasellus quam erat, venenatis in diam et, mattis aliquam sapien. Praesent dignissim non nunc ut sodales. Ut aliquam orci vitae sapien fermentum, sit amet tempus sapien elementum. Nulla volutpat arcu nec erat semper, ut commodo nibh fermentum. Curabitur condimentum sagittis lorem, in elementum magna viverra sit amet. In vehicula lobortis pretium. Nulla eu vehicula justo. In gravida nisl augue. Etiam cursus neque sit amet blandit consectetur. In rutrum dolor finibus, cursus eros sit amet, vulputate turpis. Sed pulvinar mauris quam, sed sollicitudin justo suscipit non. Vestibulum molestie non nisi non fermentum. Sed hendrerit porta odio, finibus dictum elit. Quisque posuere enim sed tempus vulputate. Curabitur pulvinar risus lacus, ac pharetra est blandit ultrices. Phasellus pretium dapibus arcu, id elementum diam. Donec euismod elit a orci iaculis laoreet. Quisque accumsan, justo ac maximus faucibus, mauris mauris condimentum nisl, in ornare tellus dolor ut felis. Curabitur placerat orci malesuada tellus vehicula mollis. Cras vel efficitur diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin efficitur, mi sed pharetra venenatis, nisl est hendrerit quam, in consequat tortor lacus ut risus. Cras diam ligula, posuere ac nisl maximus, tempus mollis nulla.",
+			"parts": [
+				{
+					"part_name": "Arduino",
+					"quantity": 1
+				},
+				{
+					"part_name": "Servo",
+					"quantity": 1
+				},
+				{
+					"part_name": "Wires",
+					"quantity": 20
+				}
+			],
+			"downloads": [
+				{
+					"type": "document",
+					"name": "01-sunflower.pdf",
+					"link": "/"
+				},
+				{
+					"type": "image",
+					"name": "01-sunflower.png",
+					"link": "/"
+				}
+			]
+		}
+	]
+}

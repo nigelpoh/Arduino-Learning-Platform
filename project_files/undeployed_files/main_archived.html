@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+
+	<title>The Project Mail Service | make::learn</title>
+
+	<link rel="stylesheet" href="https://pagecdn.io/lib/normalize/8.0.1/normalize.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="header">
+		<a class="heading brand">The Project Mail Service</a>
+	</nav>
+	<div class="splash-container">
+		<div class="splash">
+			<h3 class="brand splash-brand">Make stuff; learn things</h3>
+			<form class="register" id = "submitemail" method="POST">
+				<label class="h5" for="email">Interested?</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email!">
+				<button type="submit" class="h5 register-submit">
+					<i class="material-icons">send</i>
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="content-wrapper">
+		<div class="content odd">
+			<h4>Fun projects: mailed to your door.</h4>
+			<p class="content-text">Order a kit and receive it at your doorstep, courtesy of this nation's most wonderful postal service. Each kit contains:</p>
+			<ul class="content-text">
+				<li>All the parts needed for one (1) cool project.</li>
+				<li>
+					A booklet with:
+					<ul>
+						<li>Instructions for building said project.</li>
+						<li>A lesson on at least one skill helpful to making things on your own.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="content even">
+			<h4>Don't know where to start? No worries, follow the tech tree:</h4>
+			<p class="content-text">*More to be released in the future</p>
+			<svg width="640", height="480"></svg>		
+		</div>
+		<div class="content odd">
+			<h4>Get stuck? Ask for help.</h4>
+			<p class="content-text">When you buy a kit, you also buy discounted access to one-on-one tuition sessions with one of our experienced mentors. Ask us anything, and we'll try out best to help you through it, though we'll probably have better performance rates with one of our kits.</p>
+			<p class="content-text">Don't want to buy a kit? No problem. You'll still have access to our mentors, though without a discount.</p>
+			<p class="content-text">Poor student, underpaid indentured servant to the state, or just looking for a side gig in general? <a>Join us</a> as a mentor and receive majority of the mentorship fee for each session!</p>
+		</div>
+		<div class="content even">
+			<h4>Avoid double-buying: keep track of your inventory.</h4>
+			<p class="content-text">We get that there is a lot of overlap in the parts lists of our kits; after all there is so much an Arduino can do. So, if you create an account, we'll keep track of what you have ordered for you and you can use our parts picker to pick out only what you need for your new kit.</p>
+		</div>
+		<div class="content odd">
+			<h4>Got an amazing idea for a new project? We'll pay you!</h4>
+			<p class="content-text">Our line-up of projects cannot always remain stagnant. If you have an idea for this amazing project you're dying to see in kit form, write to us and we might just buy the idea from you and turn it into the latest in our lineup! Bonus points for having written a lesson nice and ready to hit the presses and stuff in boxes just in time to slap some stamps on.</p>
+		</div>
+	<footer class="brand">
+		<p class="footer-text">
+			We are a couple of students from Singapore trying to provide a fresh breath of after-school learning. A fun one, we hope.
+		</p>
+		<p class="footer-text">Contact us at:</p>
+		<ul class="footer-text">
+			<li>Email: [email]</li>
+		</ul>
+	</footer>
+	</div>
+	<script src="https://d3js.org/d3.v6.min.js"></script>
+	<script src="techtree.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+<script>
+$('#submitemail').submit(function(e){
+	alert("Submitted");
+    e.preventDefault();
+    $.ajax({
+        url: '/register',
+        type: 'post',
+        data:$('#submitemail').serialize(),
+        success:function(){}
+    });
+});
+</script>
+</html>

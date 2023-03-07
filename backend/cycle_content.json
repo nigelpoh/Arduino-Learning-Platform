@@ -1,0 +1,16 @@
+{	
+	"quotes": [	
+		{	
+			"header": "Everyone faces many problems. Let us help you.<br />Register your interest now to get notified.",	
+			"quote": "\"Whenever I discover exactly why a bug has occured and how to fix it, it always disappears and get replaced with something even more bizarre and inexplicable immediately. And this has occurred so many times!\""	
+		},
+		{
+			"header": "Learning can be affordable and effective at the same time.<br />Register your interest now to get notified.",
+			"quote": "\"I wanted to start learning Arduino programming but a starter kit costs more than a hundred dollars! That is basically a large portion of my monthly allowance! How can I afford that?!\""
+		},
+		{
+			"header": "Get project::boxes along with all the required parts at your doorstep.<br />Register your interest now to get notified.",
+			"quote": "\"I spent so much time trying to find all the electrical components to make a cool rover project I found online. When I finally found the cheapest options available online and tried to pay, they told me that they do not deliver to my country!\""
+		}
+	] 
+}

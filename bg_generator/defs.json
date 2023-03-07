@@ -1,0 +1,27 @@
+{
+	"width": 1366,
+	"height": 768,
+	"background_colour": "#2B4369",
+	"bodies": 100,
+	"margin": 0.005,
+	"components": [
+		{
+			"path": "../resources/component_star_yellow.svg",
+			"density": 0.2,
+			"scale": {
+				"lowest": 0.20,
+				"mean": 25,
+				"highest": 0.75
+			}
+		},
+		{
+			"path": "../resources/component_star_white.svg",
+			"density": 0.8,
+			"scale": {
+				"lowest": 0.5,
+				"mean": 25,
+				"highest": 1.125
+			}
+		}
+	]
+}
